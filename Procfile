@@ -1,1 +1,1 @@
-web: waitress-serve --listen=*:10000 app:app
+web: streamlit run app.py --logger.level=error --client.showErrorDetails=false
