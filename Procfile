@@ -1,1 +1,1 @@
-web: streamlit run app.py --logger.level=error --client.showErrorDetails=false
+web: gunicorn app:app
