@@ -5,6 +5,7 @@ import pickle
 import os
 
 app = Flask(__name__)
+load_resources()
 
 # Globals
 model = None
@@ -172,7 +173,7 @@ def predict():
 
 
 if __name__ == '__main__':
-    load_resources()
+    
 
     port = int(os.environ.get("PORT", 5000))
 
