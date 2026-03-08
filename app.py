@@ -5,7 +5,7 @@ import pickle
 import os
 
 app = Flask(__name__)
-load_resources()
+
 
 # Globals
 model = None
@@ -42,7 +42,7 @@ def load_resources():
         print("Dataset load failed, using default median:", e)
 
     return True
-
+load_resources()
 
 @app.route('/', methods=['GET'])
 def index():
